@@ -53,6 +53,7 @@ public class TestExtentReport {
 		test.log(Status.INFO,"Enter username");
 		test.log(Status.INFO,"Enter Password");
 		System.out.println("Login sucessful");
+		
 	}
 	
 	@Test
@@ -61,7 +62,7 @@ public class TestExtentReport {
 		test=extent.createTest("Invalid user");
 		test.log(Status.INFO,"Enter username");
 		test.log(Status.INFO,"Enter Password");
-		//test.fail("Fail the test case");
+		test.fail("Fail the test case");
 		Assert.fail();
 	}
 	
